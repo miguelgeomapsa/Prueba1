@@ -1,0 +1,148 @@
+RECURSOS SESIÓN 2 · index.html
+Tema: Pueblos Mágicos de México
+------------------------------------------------------------
+
+ARCHIVOS DE ESTA CARPETA
+banner.png   → imagen de fondo del encabezado
+pin.png      → pin para el mapa estático
+
+GOOGLE FONTS
+Página:  https://fonts.google.com
+Fuente para títulos:  Playfair Display
+Fuente para párrafos: Nunito
+Link para el <head>:
+https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Nunito:wght@400;700&display=swap
+
+COLORES
+Fondo:   #fff7ec
+Texto:   #2d2a32
+Acento:  #c0006a
+
+PÁGINA PARA EDITAR CON EL INSPECTOR
+https://www.esri.com/en-us/about/about-esri/overview
+
+------------------------------------------------------------
+MAPA ESTÁTICO
+------------------------------------------------------------
+Subtítulo (<h2>):  Algunos Pueblos Mágicos de norte a sur
+Imagen del mapa:   https://commons.wikimedia.org/wiki/Special:FilePath/Mexico_location_map.svg?width=1200
+
+Pines:
+Creel                  left: 33.7%   top: 29.0%
+Real de Catorce        left: 54.7%   top: 50.3%
+Bacalar                left: 93.5%   top: 76.6%
+
+Para calcular la posición de otro lugar:
+left = (longitud + 118.5) / 32.2 x 100
+top  = (33.3 - latitud) / 19.1 x 100
+
+
+------------------------------------------------------------
+BLOQUES DE CÓDIGO PARA COPIAR (en el orden de la clase)
+------------------------------------------------------------
+
+>> 1. En index.html, dentro del <head>, debajo del <title>:
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+
+>> 2. En style.css: fondo y color del texto
+
+body {
+    background-color: #fff7ec;
+    color: #2d2a32;
+    margin: 0;
+}
+
+
+>> 3. En style.css: tipografía del título (usando el elemento h1)
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    background-color: rgba(255, 247, 236, 0.9);
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+
+
+>> 4. En style.css: tipografía de los párrafos (usando el elemento)
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    line-height: 1.6;
+}
+
+
+>> 5. En style.css: subtítulos
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #c0006a;
+}
+
+
+>> 6. En style.css: banner de fondo con el título al centro
+
+.titulo {
+    height: 300px;
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+>> 7. En style.css: secciones al centro e imágenes
+
+section {
+    max-width: 80%;
+    margin: auto;
+}
+
+.imagen {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+>> 8. En index.html, debajo de la primera </section>: mapa estático con pines
+
+<section>
+    <h2>Algunos Pueblos Mágicos de norte a sur</h2>
+    <div class="mapaestatico">
+        <img class="mapamexico" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mexico_location_map.svg?width=1200">
+        <img class="marker" src="pin.png" style="left: 33.7%; top: 29.0%;" title="Creel">
+        <img class="marker" src="pin.png" style="left: 54.7%; top: 50.3%;" title="Real de Catorce">
+        <img class="marker" src="pin.png" style="left: 93.5%; top: 76.6%;" title="Bacalar">
+    </div>
+</section>
+
+
+>> 9. En style.css: posición del mapa y de los pines
+
+.mapaestatico {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.mapamexico {
+    width: 100%;
+}
+
+.marker {
+    position: absolute;
+    width: 28px;
+    transform: translate(-50%, -100%);
+}
+
+
+>> 10. En index.html, debajo del </header>: enlace a la página del mapa
+
+<nav><a href="mapa.html">Ver el mapa</a></nav>

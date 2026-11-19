@@ -1,0 +1,485 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Huasca de Ocampo",
+    "estado": "Hidalgo",
+    "region": "Centro",
+    "atractivo": "Prismas basálticos"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.5753,
+     20.205
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Mineral del Chico",
+    "estado": "Hidalgo",
+    "region": "Centro",
+    "atractivo": "Bosques y peñas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.7311,
+     20.215
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Real de Catorce",
+    "estado": "San Luis Potosí",
+    "region": "Norte",
+    "atractivo": "Túnel Ogarrio y desierto"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.8869,
+     23.6894
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Xilitla",
+    "estado": "San Luis Potosí",
+    "region": "Centro",
+    "atractivo": "Jardín surrealista de Edward James"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.9908,
+     21.3858
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Tepoztlán",
+    "estado": "Morelos",
+    "region": "Centro",
+    "atractivo": "Cerro del Tepozteco"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -99.0931,
+     18.9847
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Taxco",
+    "estado": "Guerrero",
+    "region": "Centro",
+    "atractivo": "Platería y arquitectura virreinal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -99.605,
+     18.5564
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Tequila",
+    "estado": "Jalisco",
+    "region": "Occidente",
+    "atractivo": "Paisaje agavero"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.8369,
+     20.8822
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Tapalpa",
+    "estado": "Jalisco",
+    "region": "Occidente",
+    "atractivo": "Las Piedrotas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.7589,
+     19.9447
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Comala",
+    "estado": "Colima",
+    "region": "Occidente",
+    "atractivo": "El pueblo blanco de América"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.7597,
+     19.3203
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Pátzcuaro",
+    "estado": "Michoacán",
+    "region": "Occidente",
+    "atractivo": "Lago de Pátzcuaro"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -101.6092,
+     19.5136
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Tlalpujahua",
+    "estado": "Michoacán",
+    "region": "Occidente",
+    "atractivo": "Esferas navideñas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.1736,
+     19.805
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Valle de Bravo",
+    "estado": "Estado de México",
+    "region": "Centro",
+    "atractivo": "Presa y deportes al aire libre"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.1311,
+     19.195
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Bernal",
+    "estado": "Querétaro",
+    "region": "Centro",
+    "atractivo": "Peña de Bernal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -99.9408,
+     20.7408
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Dolores Hidalgo",
+    "estado": "Guanajuato",
+    "region": "Centro",
+    "atractivo": "Cuna de la Independencia"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.9319,
+     21.1561
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Mineral de Pozos",
+    "estado": "Guanajuato",
+    "region": "Centro",
+    "atractivo": "Antiguas minas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.4975,
+     21.2233
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Cuetzalan",
+    "estado": "Puebla",
+    "region": "Centro",
+    "atractivo": "Sierra Nororiental y cascadas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.5214,
+     20.0181
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Cholula",
+    "estado": "Puebla",
+    "region": "Centro",
+    "atractivo": "Gran Pirámide"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.3064,
+     19.0633
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Huamantla",
+    "estado": "Tlaxcala",
+    "region": "Centro",
+    "atractivo": "Tapetes de aserrín"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.9228,
+     19.3133
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "San Cristóbal de las Casas",
+    "estado": "Chiapas",
+    "region": "Sur",
+    "atractivo": "Centro histórico"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -92.6376,
+     16.737
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Palenque",
+    "estado": "Chiapas",
+    "region": "Sur",
+    "atractivo": "Zona arqueológica"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -91.9819,
+     17.5097
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Mazunte",
+    "estado": "Oaxaca",
+    "region": "Sur",
+    "atractivo": "Playas y tortugas marinas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.55,
+     15.6667
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Bacalar",
+    "estado": "Quintana Roo",
+    "region": "Península",
+    "atractivo": "Laguna de los siete colores"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -88.3953,
+     18.6772
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Isla Mujeres",
+    "estado": "Quintana Roo",
+    "region": "Península",
+    "atractivo": "Playas del Caribe"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.7311,
+     21.2311
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Izamal",
+    "estado": "Yucatán",
+    "region": "Península",
+    "atractivo": "La ciudad amarilla"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -89.0178,
+     20.9314
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Valladolid",
+    "estado": "Yucatán",
+    "region": "Península",
+    "atractivo": "Cenotes y centro histórico"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -88.2017,
+     20.6897
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Álamos",
+    "estado": "Sonora",
+    "region": "Norte",
+    "atractivo": "Arquitectura virreinal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.94,
+     27.0272
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Creel",
+    "estado": "Chihuahua",
+    "region": "Norte",
+    "atractivo": "Barrancas del Cobre"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -107.6358,
+     27.7522
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Sombrerete",
+    "estado": "Zacatecas",
+    "region": "Norte",
+    "atractivo": "Arquitectura minera"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.6397,
+     23.6342
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Todos Santos",
+    "estado": "Baja California Sur",
+    "region": "Norte",
+    "atractivo": "Playas y arte"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.2244,
+     23.4486
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "nombre": "Loreto",
+    "estado": "Baja California Sur",
+    "region": "Norte",
+    "atractivo": "Misión y Mar de Cortés"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.3433,
+     26.0119
+    ]
+   }
+  }
+ ]
+}

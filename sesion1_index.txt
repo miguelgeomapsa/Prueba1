@@ -1,0 +1,70 @@
+RECURSOS SESIÓN 1 · PÁGINA index.html
+Tema: Pueblos Mágicos de México
+------------------------------------------------------------
+
+TÍTULO DE LA PESTAÑA (<title>)
+Pueblos Mágicos de México
+
+TÍTULO PRINCIPAL (<h1>)
+Pueblos Mágicos de México
+
+------------------------------------------------------------
+SECCIÓN "general"
+------------------------------------------------------------
+
+SUBTÍTULO (<h2>)
+¿Qué es un Pueblo Mágico?
+
+PÁRRAFO (<p>)
+Un Pueblo Mágico es una localidad que conserva su patrimonio histórico, cultural y natural, así como tradiciones, leyendas y paisajes que reflejan la identidad de México. El programa fue creado en 2001 por la Secretaría de Turismo para impulsar el turismo en estas localidades, y hoy agrupa a 177 pueblos en todo el país.
+
+PALABRAS PARA RESALTAR
+"Pueblo Mágico", "2001", "Secretaría de Turismo" y "177 pueblos" con <strong>, y "patrimonio histórico, cultural y natural" con <em>
+
+FUENTE DEL TEXTO (<a>)
+Texto:  National Geographic, 2023
+Link:   https://www.nationalgeographicla.com/viajes/2023/12/que-son-los-pueblos-magicos-de-mexico
+Color sugerido para la fuente (<span style="color: ...">): #c0006a
+
+------------------------------------------------------------
+SECCIÓN "subtema"
+------------------------------------------------------------
+
+SUBTÍTULO (<h2>)
+Un pueblo para cada paisaje
+
+SUBTEMA 1 (<h3>)
+Naturaleza
+
+PÁRRAFO (<p>)
+Algunos Pueblos Mágicos destacan por su entorno natural, como Bacalar, en Quintana Roo, famoso por su laguna de los siete colores, o Creel, en Chihuahua, puerta de entrada a las Barrancas del Cobre.
+
+IMAGEN DESDE INTERNET (<img>)
+Link:   https://commons.wikimedia.org/wiki/Special:FilePath/Bacalar_QR_Feb_2020_01.jpg?width=800
+Descripción (alt): Laguna de Bacalar, Quintana Roo
+Título de la imagen (<figcaption>):
+Laguna de Bacalar, Quintana Roo (Wikimedia Commons, 2020)
+
+SUBTEMA 2 (<h3>)
+Historia y tradición
+
+PÁRRAFO (<p>)
+Otros conservan la arquitectura y las costumbres de su pasado, como Taxco, conocido por su platería, Dolores Hidalgo, cuna de la Independencia, o Izamal, la ciudad amarilla de Yucatán.
+
+IMAGEN LOCAL (<img>)
+Archivo: regiones.png   (está en esta carpeta, cópiala a tu carpeta de trabajo)
+Descripción (alt): Gráfica
+Título de la imagen (<figcaption>):
+Elaboración propia con los 30 pueblos de este ejercicio
+
+------------------------------------------------------------
+SECCIÓN "video"
+------------------------------------------------------------
+
+SUBTÍTULO (<h2>)
+Conoce más
+
+VIDEO DE YOUTUBE (<iframe>)
+Link para el src: https://www.youtube.com/embed/tlSQiUckAVc
+Video original:   https://www.youtube.com/watch?v=tlSQiUckAVc
+Fuente (<figcaption>): Fuente: Nueva Escuela Mexicana, SEP

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Mapa de Pueblos Mágicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Aquí van las librerías (leaflet) -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+     <!--Aqui va la de MApLibre-->
+     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" />
+    <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+</head>
+<body>
+    <header class="titulo">
+        <h1>Mapa de Pueblos Mágicos</h1>
+    </header>
+    <nav><a href="index.html">Regresar al inicio</a></nav>
+
+    <h2>Pueblos Mágicos de México</h2>
+    <div id="map"></div>
+
+    <h2>¿Dónde se concentran?</h2>
+    <div id="mlmap"></div>
+
+
+    <!--Este es elcodigo de funcionamiento del mapa y desde L.tileLayer.. es el servicio de tilemap-->
+    <script>
+    var map = L.map('map').setView([23, -102], 5);
+
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 17,
+    attribution: 'Tiles &copy; Esri'
+    }).addTo(map);
+
+    fetch('pueblos_magicos.geojson')
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        L.geoJSON(datos, {
+            pointToLayer: (punto, coordenadas) => L.circleMarker(coordenadas, {
+                radius: 7, color: 'white', weight: 2, fillColor: '#e4007c', fillOpacity: 0.9
+            }),
+            onEachFeature: (punto, capa) => {
+                capa.bindPopup('<strong>' + punto.properties.nombre + '</strong><br>' + punto.properties.estado + '<br>' + punto.properties.atractivo);
+            }
+        }).addTo(map);
+    });
+
+
+    const mlmap = new maplibregl.Map({
+    container: 'mlmap',
+    style: {
+        version: 8,
+        sources: {
+            esri: {
+                type: 'raster',
+                tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}'],
+                tileSize: 256,
+                maxzoom: 16,
+                attribution: 'Tiles &copy; Esri'
+            }
+        },
+        layers: [{ id: 'esri', type: 'raster', source: 'esri' }]
+    },
+    center: [-100, 22],
+    zoom: 4.3
+    });
+    mlmap.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+
+
+    
+    mlmap.on('load', () => {
+    mlmap.addSource('pueblos', { type: 'geojson', data: 'pueblos_magicos.geojson' });
+
+    mlmap.addLayer({
+        id: 'mapa-de-calor',
+        type: 'heatmap',
+        source: 'pueblos',
+        paint: {
+            'heatmap-radius': 40,
+            'heatmap-intensity': 1.2,
+            'heatmap-opacity': 0.85,
+            'heatmap-color': [
+                'interpolate', ['linear'], ['heatmap-density'],
+                0,   'rgba(0, 0, 0, 0)',
+                0.2, '#fde0ef',
+                0.5, '#f768a1',
+                0.8, '#c51b8a',
+                1,   '#7a0177'
+            ]
+        }
+    });
+    });
+
+    </script>
+</body>
+</html>
